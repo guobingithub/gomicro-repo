@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package apiproto;
+
+import "proto/person.proto";
+import "proto/ping.proto";
+
+service ApiService {
+    rpc getUserInfo(getUserInfoReq) returns (getUserInfoRsp) {}
+    rpc getAllUserInfo(getAllUserInfoReq) returns (getAllUserInfoRsp) {}
+    rpc pingChat(pingChatReq) returns (pongChatRsp) {}
+}
+
+message CommonRsp {
+    int32 code = 1;
+    string msg = 2;
+    string data = 3;
+}
+
+message getUserInfoReq {
+    string userId = 1;
+}
+
+message getUserInfoRsp {
+    int32 code = 1;
+    string msg = 2;
+    apiproto.person data = 3;
+}
+
+message getAllUserInfoReq {
+    int32 page = 1;
+    int32 size = 2;
+}
+
+message getAllUserInfoRsp {
+    int32 code = 1;
+    string msg = 2;
+    all_person data = 3;
+}
+
+message pingChatReq {
+    apiproto.PingReq inputParam = 3;
+}
+
+message pongChatRsp {
+    int32 code = 1;
+    string msg = 2;
+    apiproto.PongRsp data = 3;
+}
+

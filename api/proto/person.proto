@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package apiproto;
+
+message person{
+    string id = 1;
+    string name = 2;
+    uint32 age = 3;
+}
+
+message all_person{
+    repeated person Per = 1;
+}

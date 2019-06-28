@@ -1,0 +1,14 @@
+mongodb:
+  hostsports: 127.0.0.1:27017
+  dbname: gomicro-repo
+  userpass:
+  replicaset:
+  role: admin
+
+zk:
+  hostsports: 192.168.1.78:2181
+
+server:
+  address: 127.0.0.1
+  grpcport: :50050
+

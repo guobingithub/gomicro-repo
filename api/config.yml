@@ -1,0 +1,6 @@
+zk:
+  hostsports: 192.168.1.78:2181
+
+server:
+  address: 127.0.0.1
+  apiport: :8000

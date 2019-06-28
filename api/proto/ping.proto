@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package apiproto;
+
+//ping request param
+message PingReq
+{
+    int32   fid = 1;
+    string  fname = 2;
+    int32   tid = 3;
+    string  tname = 4;
+    string  ping = 5;
+}
+
+//pong response param
+message PongRsp
+{
+    int32   fid = 1;
+    string  fname = 2;
+    int32   tid = 3;
+    string  tname = 4;
+    string  pong = 5;
+}
+
