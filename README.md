@@ -16,3 +16,4 @@
 - redis
 - mongodb
 - protobuf
+- zookeeper
