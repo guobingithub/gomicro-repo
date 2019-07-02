@@ -2,5 +2,5 @@
 
 #### 业务流程图
 
-![业务流程图](C3CEDB168515413EBFF8141F2F3796BC)
+![业务流程图](https://github.com/guobingithub/gomicro-repo/master/image/业务流程图.png) 
 
