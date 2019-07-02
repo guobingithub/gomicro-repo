@@ -17,3 +17,8 @@
 - mongodb
 - protobuf
 - zookeeper
+
+#### 拆解
+
+![任务模块拆解](https://github.com/guobingithub/gomicro-repo/blob/master/image/gomicro-repo.png) 
+
